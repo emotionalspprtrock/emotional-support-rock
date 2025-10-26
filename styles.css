@@ -1,0 +1,115 @@
+ body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f1f9f1; /*linear-gradient(180deg, /*#f7f7f7 0%, #d6e0e7 100% ); */
+      text-align: center;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    .container {
+      padding-top: 10%;
+    }
+
+.page {
+    text-align: left;
+    padding: 20px;
+}
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.3em;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 1em;
+      font-style: italic;
+      transition: opacity 0.8s ease;
+    }
+
+    .rock-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #rock {
+      width: 200px;
+      transition: transform 0.1s ease;
+      cursor: pointer;
+    }
+
+    #rock:active {
+      transform: scale(0.95);
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #444;
+      min-height: 2em;
+    }
+
+    #share-area {
+      margin-top: 10px;
+    }
+
+    #share-button {
+      background: #cfc486;
+      color: #444;
+      font-weight: bold;
+      border: none;
+      padding: 16px 24px;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.1s ease;
+      box-shadow: 0 6px 8px rgba(0,0,0,0.1);
+    }
+
+    #share-button:hover {
+      background: #e3e3e3;
+    }
+
+    #share-button:active {
+      transform: scale(0.97);
+    }
+
+    #share-status {
+      margin-top: 6px;
+      font-size: 1rem;
+      color: #555;
+      font-style: italic;
+      transition: opacity 0.3s ease;
+    }
+
+    @keyframes rockGiggle {
+      0%, 100% { transform: rotate(0deg); }
+      20% { transform: rotate(5deg); }
+      40% { transform: rotate(-5deg); }
+      60% { transform: rotate(3deg); }
+      80% { transform: rotate(-3deg); }
+    }
+
+    .giggle {
+      animation: rockGiggle 0.5s ease-in-out;
+    }
+
+    footer {
+      bottom: 10px;
+      width: 100%;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    .footergame {
+        position: fixed;
+      bottom: 10px;
+      width: 100%;
+    }
+
+    footer a {
+      color: #444;
+    }
